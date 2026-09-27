@@ -15,4 +15,4 @@ Production training will occur once the following upstream artifacts are finaliz
 1. **Member 1**: Complete ground-truth labels (`train_ground_truth.tsv`) and official entity-level split (`validation_split.json` or `validation_membership.tsv`).
 2. **Member 1**: Full normalized records (`normalized_source1.tsv`, `normalized_source2.tsv`, `normalized_source3.tsv`) indexed via SQLite `DiskEntityLookup`.
 3. **Member 2**: Final candidate pair blocking artifact (`candidate_pairs.tsv` or `candidate_train.tsv`).
-4. **Member 3 Real Training**: Execution of `business-entity-resolution-prepare-training` followed by LightGBM training on real prepared data with character n-gram TF-IDF fit exclusively on the training split.
+4. **Member 3 Real Training**: Execution of `python -m business_entity_resolution.matching.prepare_training_data` followed by LightGBM training on real prepared data with character n-gram TF-IDF fit exclusively on the training split.
