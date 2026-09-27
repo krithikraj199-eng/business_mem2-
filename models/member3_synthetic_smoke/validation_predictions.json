@@ -1,0 +1,58 @@
+[
+  {
+    "pair_id": "pair-0-1",
+    "source1_id": "s1-0",
+    "source2_id": "s2-0-1",
+    "label": 1,
+    "probability": 0.5
+  },
+  {
+    "pair_id": "pair-0-0",
+    "source1_id": "s1-0",
+    "source2_id": "s2-0-0",
+    "label": 0,
+    "probability": 0.5
+  },
+  {
+    "pair_id": "pair-1-1",
+    "source1_id": "s1-1",
+    "source2_id": "s2-1-1",
+    "label": 1,
+    "probability": 0.5
+  },
+  {
+    "pair_id": "pair-1-0",
+    "source1_id": "s1-1",
+    "source2_id": "s2-1-0",
+    "label": 0,
+    "probability": 0.5
+  },
+  {
+    "pair_id": "pair-5-1",
+    "source1_id": "s1-5",
+    "source2_id": "s2-5-1",
+    "label": 1,
+    "probability": 0.5
+  },
+  {
+    "pair_id": "pair-5-0",
+    "source1_id": "s1-5",
+    "source2_id": "s2-5-0",
+    "label": 0,
+    "probability": 0.5
+  },
+  {
+    "pair_id": "pair-7-1",
+    "source1_id": "s1-7",
+    "source2_id": "s2-7-1",
+    "label": 1,
+    "probability": 0.5
+  },
+  {
+    "pair_id": "pair-7-0",
+    "source1_id": "s1-7",
+    "source2_id": "s2-7-0",
+    "label": 0,
+    "probability": 0.5
+  }
+]

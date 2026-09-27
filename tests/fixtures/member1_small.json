@@ -1,0 +1,19 @@
+{
+  "source1": [
+    {"entity_id":"S1-001","business_name_normalized":"alpha shop","business_address_normalized":"12 road","country_normalized":"india","postal_codes":"600001 600002"},
+    {"entity_id":"S1-002","business_name_normalized":"","business_address_normalized":"  ","country_normalized":null,"postal_codes":""}
+  ],
+  "source2": [
+    {"entity_id":"S2-001","business_name_normalized":"alpha shop","business_address_normalized":"12 road","country_normalized":"india","postal_codes":"600002"}
+  ],
+  "source3": [
+    {"entity_id":"S3-001","business_name_normalized":"other shop","business_address_normalized":"1 street","country_normalized":"france","postal_codes":"00123"}
+  ],
+  "split": {"train_source1_entity_ids":["S1-001"],"validation_source1_entity_ids":["S1-002"]},
+  "ground_truth": {"S1-001":["S2-001"],"S1-002":[]},
+  "candidates": [
+    {"pair_id":"p-validation","source1_entity_id":"S1-002","candidate_entity_id":"S3-001","candidate_source":"source3","split":"validation"},
+    {"pair_id":"p-positive","source1_entity_id":"S1-001","candidate_entity_id":"S2-001","candidate_source":"source2","split":"train"},
+    {"pair_id":"p-negative","source1_entity_id":"S1-001","candidate_entity_id":"S3-001","candidate_source":"source3","split":"train"}
+  ]
+}
