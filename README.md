@@ -75,9 +75,10 @@ business-entity-resolution/
 
 ## 3. Setup & Environment
 
-### Prerequisites
-- Python 3.11+
-- Virtual environment (`.venv`)
+### Verified Runtime Environment
+- **Python Version**: `Python 3.11.9` (verified in active `.venv`)
+- **Virtual Environment**: `.venv`
+- **Dependencies Specification**: Pinned runtime and testing dependencies in [`requirements.txt`](requirements.txt), declared in [`pyproject.toml`](pyproject.toml).
 
 ### Installation
 ```bash
@@ -87,7 +88,10 @@ business-entity-resolution/
 # Linux/macOS:
 source .venv/bin/activate
 
-# Install package in editable mode with dependencies
+# Option A: Install via pinned requirements
+pip install -r requirements.txt
+
+# Option B: Install package in editable mode with dependencies
 pip install -e .
 ```
 
@@ -288,6 +292,6 @@ To execute real production training and final full-dataset inference:
 
 ## 10. Git Repository & Remote Status
 
-- **Local Repository**: Initialized Git repository on branch `master`.
-- **Remote Status**: **No remote configured** (`git remote -v` is empty). The codebase has **not** been pushed to GitHub.
+- **Active Branch**: `member3` (tracking `origin/member3`).
+- **Remote**: `origin` (`https://github.com/krithikraj199-eng/business_mem2-.git`).
 - **Hygiene Confirmation**: No real pilot datasets, challenge records, SQLite database indexes (`*.sqlite3`), model prediction files, or secrets are tracked or committed. All data directories and artifacts are strictly excluded by [`.gitignore`](.gitignore).

@@ -6,6 +6,19 @@ build-backend = "setuptools.build_meta"
 name = "business-entity-resolution"
 version = "0.1.0"
 requires-python = ">=3.11"
+dependencies = [
+    "joblib>=1.6.0",
+    "lightgbm>=4.7.0",
+    "numpy>=2.4.6",
+    "rapidfuzz>=3.14.6",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.17.1",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=9.1.1",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -14,4 +27,3 @@ where = ["src"]
 markers = [
     "real_data: tests requiring the git-ignored real-data pilot files",
 ]
-
